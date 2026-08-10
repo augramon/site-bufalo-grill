@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Búfalo Grill São Caetano | Churrascaria e Pizzaria em Salvador</title>
+<meta name="description" content="Churrascaria e pizzaria na Estrada de Campinas, São Caetano, Salvador. Picanha na chapa, pizza de carne seca com coalho e massa feita na hora. 4,6 no Google com 1.517 avaliações.">
+<meta name="theme-color" content="#0E0C0A">
+<link rel="icon" type="image/png" href="logo-bufalo-mark-4.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="Búfalo Grill São Caetano | Churrascaria e Pizzaria em Salvador">
+<meta property="og:description" content="Carne na brasa, pizza de verdade e massa na hora em São Caetano, Salvador. 4,6 no Google com 1.517 avaliações.">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Búfalo Grill São Caetano">
+<meta property="og:url" content="https://app.cardapioweb.com">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Búfalo Grill São Caetano",
+  "image": "https://app.cardapioweb.com",
+  "servesCuisine": ["Churrasco", "Pizza", "Massas"],
+  "priceRange": "R$ 20 a R$ 100 por pessoa",
+  "telephone": "+55-71-99162-2440",
+  "url": "https://app.cardapioweb.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Estrada de Campinas, 369",
+    "addressLocality": "Salvador",
+    "addressRegion": "BA",
+    "postalCode": "40391-400",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "1517",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "11:00",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "11:00",
+      "closes": "23:30"
+    }
+  ],
+  "acceptsReservations": "True"
+}
+</script>
+
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --carvao:#0E0C0A;      /* fundo dominante */
+  --carvao-2:#171310;    /* camada elevada */
+  --osso:#F2EDE4;        /* texto principal / seção clara */
+  --brasa:#E4572E;       /* ação, com avareza */
+  --fumaca:#8A837A;      /* secundário, bordas 1px, divisores */
+  --dourado:#C9A227;     /* exclusivo estrelas / micro-detalhes */
+
+  --maxw:1200px;
+  --gutter:clamp(20px, 5vw, 64px);
+
+  --ff-display:"Bitter", Georgia, serif;
+  --ff-body:"Lora", Georgia, "Times New Roman", serif;
+
+  --ease-out:cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--carvao);
+  color:var(--osso);
+  font-family:var(--ff-body);
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+@media (min-width:900px){body{font-size:18px}}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ============================================================
+   FOCUS / ACESSIBILIDADE
+   ============================================================ */
+:focus-visible{
+  outline:2px solid var(--brasa);
+  outline-offset:3px;
+  border-radius:2px;
+}
+.skip-link{
+  position:absolute;left:-999px;top:0;z-index:200;
+  background:var(--brasa);color:var(--osso);
+  padding:12px 18px;font:600 12px/1 var(--ff-body);
+  letter-spacing:.12em;text-transform:uppercase;
+}
+.skip-link:focus{left:12px;top:12px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ============================================================
+   GRAIN GLOBAL
+   ============================================================ */
+.grain{
+  position:fixed;inset:0;z-index:150;pointer-events:none;
+  opacity:.04;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   TIPOGRAFIA UTIL
+   ============================================================ */
+.label{
+  font:600 clamp(10px,1vw,12px)/1 var(--ff-body);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--fumaca);
+}
+.label--brasa{color:var(--brasa)}
+.display{
+  font-family:var(--ff-display);
+  font-weight:900;
+  letter-spacing:-0.02em;
+  line-height:1.08;
+  text-transform:uppercase;
+}
+.section-index{
+  font-family:var(--ff-display);
+  font-weight:800;
+  font-size:clamp(4rem, 12vw, 9rem);
+  line-height:0.8;
+  color:transparent;
+  -webkit-text-stroke:1.5px var(--fumaca);
+  text-stroke:1.5px var(--fumaca);
+  letter-spacing:-0.03em;
+  user-select:none;
+}
+
+/* Sublinhado que se desenha da esquerda p/ direita */
+.ulink{position:relative;display:inline-block;color:var(--osso)}
+.ulink::after{
+  content:"";position:absolute;left:0;bottom:-2px;height:1px;width:100%;
+  background:var(--brasa);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s var(--ease-out);
+}
+.ulink:hover::after,.ulink:focus-visible::after{transform:scaleX(1)}
+
+/* ============================================================
+   REVEAL DE HEADLINE POR LINHA (mascarado)
+   ============================================================ */
+.reveal-line{display:block;overflow:hidden;padding-top:.22em;margin-top:-.22em}
+.reveal-line > span{display:block;will-change:transform}
+html.js .reveal .reveal-line > span{
+  transform:translateY(110%);
+  transition:transform .9s var(--ease-out);
+  transition-delay:calc(var(--i,0) * 80ms);
+}
+html.js .reveal.in .reveal-line > span{transform:translateY(0)}
+
+/* Entrada de números / blocos gráficos */
+html.js .rise{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
+html.js .rise.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  html.js .reveal .reveal-line > span,
+  html.js .rise{transform:none !important;opacity:1 !important;transition:none !important}
+}
+
+/* ============================================================
+   LAYOUT BASE
+   ============================================================ */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+main{position:relative;z-index:1}
+section{position:relative}
+.rule{height:1px;background:var(--fumaca);opacity:.35;border:0}
+
+/* ============================================================
+   STATUS BAR
+   ============================================================ */
+.statusbar{
+  position:fixed;top:0;left:0;right:0;z-index:120;
+  background:rgba(14,12,10,.82);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(138,131,122,.22);
+}
+.statusbar__in{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  height:44px;
+}
+.status-open{display:flex;align-items:center;gap:9px}
+.status-open .label{color:var(--osso)}
+.dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--st,#37B24D);
+  box-shadow:0 0 0 0 var(--st-glow,rgba(55,178,77,.5));
+  animation:pulse 2.2s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 var(--st-glow,rgba(55,178,77,.5))}
+  70%{box-shadow:0 0 0 9px var(--st-glow0,rgba(55,178,77,0))}
+  100%{box-shadow:0 0 0 0 var(--st-glow0,rgba(55,178,77,0))}
+}
+/* estados do status: verde = aberto, vermelho = fechado */
+.status-open.is-open{--st:#37B24D;--st-glow:rgba(55,178,77,.5);--st-glow0:rgba(55,178,77,0)}
+.status-open.is-closed{--st:#E5484D;--st-glow:rgba(229,72,77,.5);--st-glow0:rgba(229,72,77,0)}
+@media (prefers-reduced-motion: reduce){.dot{animation:none}}
+.status-link{display:inline-flex;align-items:center;gap:8px}
+.status-link .label{color:var(--brasa)}
+.status-link svg{width:11px;height:11px;stroke:var(--brasa)}
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+.btn{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:0 30px;
+  font:600 12px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid transparent;overflow:hidden;
+  transition:color .3s var(--ease-out),border-color .3s var(--ease-out);
+  z-index:0;
+}
+.btn span{position:relative;z-index:2}
+.btn svg{position:relative;z-index:2;width:15px;height:15px}
+/* CTA primário: preenchimento em brasa crescendo da esquerda */
+.btn--primary{color:var(--carvao);background:var(--brasa);font-weight:600}
+.btn--primary::before{
+  content:"";position:absolute;inset:0;z-index:1;background:#ef6f47;
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease-out);
+}
+.btn--primary:hover::before,.btn--primary:focus-visible::before{transform:scaleX(1)}
+.btn--primary svg{stroke:var(--carvao)}
+/* Secundário: contorno */
+.btn--ghost{color:var(--osso);border-color:var(--fumaca)}
+.btn--ghost::before{
+  content:"";position:absolute;inset:0;z-index:1;background:var(--carvao-2);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease-out);
+}
+.btn--ghost:hover{border-color:var(--osso)}
+.btn--ghost:hover::before,.btn--ghost:focus-visible::before{transform:scaleX(1)}
+.btn--ghost svg{stroke:var(--osso)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  isolation:isolate;
+  padding-top:clamp(70px,9vh,100px);
+  padding-bottom:clamp(50px,8vh,90px);
+  overflow:hidden;
+}
+/* Foto de fundo da carne na brasa: tratamento duotone carvão + brasa */
+.hero__media{position:absolute;inset:0;z-index:0;overflow:hidden;background:var(--carvao)}
+.hero__media.is-empty{display:none} /* foto ausente -> hero volta ao visual só-tipografia */
+.hero__media img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:74% 50%;
+  filter:contrast(1.06) saturate(1.04) brightness(.86);
+  z-index:1;
+}
+/* Tint discreto só pra unificar o calor, preservando os dourados e as brasas reais */
+.hero__media .tint{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:var(--brasa);mix-blend-mode:soft-light;opacity:.2;
+}
+/* Scrim: escuro à esquerda (texto) e livre à direita (carne brilha) */
+.hero__media .scrim{
+  position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:
+    linear-gradient(90deg, rgba(14,12,10,.94) 0%, rgba(14,12,10,.8) 26%, rgba(14,12,10,.4) 52%, rgba(14,12,10,.06) 76%, rgba(14,12,10,0) 100%),
+    linear-gradient(0deg, rgba(14,12,10,.55) 0%, rgba(14,12,10,0) 42%);
+}
+@media (max-width:640px){
+  .hero__media img{object-position:70% 60%}
+  .hero__media .scrim{
+    background:linear-gradient(180deg, rgba(14,12,10,.92) 0%, rgba(14,12,10,.6) 30%, rgba(14,12,10,.28) 56%, rgba(14,12,10,.5) 100%);
+  }
+}
+.hero__glow{
+  position:absolute;z-index:4;pointer-events:none;
+  top:8%;left:50%;transform:translateX(-50%);
+  width:min(1100px,120vw);height:620px;
+  background:radial-gradient(60% 55% at 50% 40%, rgba(228,87,46,.20), rgba(228,87,46,.06) 45%, transparent 70%);
+  filter:blur(6px);
+}
+.hero__in{position:relative;z-index:5}
+.hero__top{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;margin-bottom:clamp(22px,4vh,40px)}
+.hero__logo{display:block;height:clamp(52px,7vw,80px);width:auto;margin:0 0 0 auto;flex:none}
+.hero__eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:0}
+.hero__eyebrow .line{height:1px;width:44px;background:var(--fumaca)}
+h1.hero__title{
+  font-family:var(--ff-display);
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:-0.02em;
+  line-height:1.18;
+  font-size:clamp(2.8rem, 7.6vw, 6.3rem);
+}
+/* Destaque fixo: container em brasa com a letra em carvão */
+.hero__title .mark-box{
+  background-color:var(--brasa);color:var(--carvao);
+  padding:0 .12em;border-radius:6px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
+.hero__sub{
+  margin-top:clamp(24px,4vh,38px);
+  max-width:46ch;
+  color:var(--osso);
+  font-size:clamp(1.05rem,1.6vw,1.25rem);
+  line-height:1.55;
+}
+.hero__sub b{color:var(--osso);font-weight:500}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(30px,5vh,44px)}
+.hero__proof{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  margin-top:clamp(34px,5vh,52px);
+  padding-top:26px;border-top:1px solid rgba(138,131,122,.28);
+}
+.stars{display:inline-flex;gap:3px}
+.stars svg{width:17px;height:17px;fill:var(--dourado)}
+.hero__proof .num{font-family:var(--ff-display);font-weight:800;font-size:1.35rem;color:var(--osso);letter-spacing:-.01em}
+.hero__proof .meta{color:var(--fumaca);font-size:.95rem}
+
+@media (max-width:640px){
+  .hero__ctas{flex-direction:column;align-items:stretch}
+  .hero__ctas .btn{width:100%}
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee{
+  border-top:1px solid rgba(138,131,122,.28);
+  border-bottom:1px solid rgba(138,131,122,.28);
+  background:var(--carvao-2);
+  padding:22px 0;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.marquee__track{display:inline-flex;white-space:nowrap;animation:scroll 34s linear infinite}
+.marquee__group{display:inline-flex;align-items:center}
+.marquee__item{
+  font-family:var(--ff-display);font-weight:700;text-transform:uppercase;
+  letter-spacing:-.01em;font-size:clamp(1.4rem,3.4vw,2.2rem);color:var(--osso);
+  padding:0 clamp(20px,3vw,42px);
+}
+.marquee__sep{width:9px;height:9px;border-radius:50%;background:var(--brasa);flex:none}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){
+  .marquee__track{animation:none;white-space:normal;flex-wrap:wrap;gap:14px;justify-content:center;padding-inline:16px}
+  .marquee__group:last-child{display:none}
+}
+
+/* ============================================================
+   ESPECIALIDADES
+   ============================================================ */
+.spec{padding:clamp(70px,11vh,140px) 0}
+.spec__head{margin-bottom:clamp(40px,7vh,80px);max-width:34ch}
+.spec__head h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.spec__row{
+  display:grid;grid-template-columns:1fr;gap:clamp(20px,4vw,56px);
+  align-items:center;
+  padding:clamp(38px,6vh,72px) 0;
+  border-top:1px solid rgba(138,131,122,.24);
+}
+.spec__row:last-child{border-bottom:1px solid rgba(138,131,122,.24)}
+@media (min-width:900px){
+  .spec__row{grid-template-columns:0.9fr 1.1fr}
+  /* linha invertida: texto largo à esquerda, quadro estreito à direita
+     -> assim TODAS as imagens têm o mesmo tamanho (coluna 0.9fr) */
+  .spec__row--flip{grid-template-columns:1.1fr 0.9fr}
+  .spec__row--flip .spec__visual{order:2}
+  .spec__row--flip .spec__body{order:1}
+}
+.spec__body h3{font-size:clamp(2rem,4.6vw,3.4rem);margin:14px 0 18px}
+.spec__body p{color:var(--osso);max-width:44ch;margin-bottom:22px}
+.spec__data{
+  display:inline-flex;align-items:baseline;gap:10px;
+  border-top:1px solid var(--brasa);padding-top:12px;
+}
+.spec__data .n{font-family:var(--ff-display);font-weight:800;font-size:2rem;color:var(--brasa);letter-spacing:-.02em}
+.spec__data .t{color:var(--fumaca);font-size:.95rem;max-width:22ch}
+
+/* Cartela visual autoral por especialidade */
+.spec__visual{
+  position:relative;aspect-ratio:4/3;border:1px solid rgba(138,131,122,.28);
+  background:
+    radial-gradient(80% 90% at 20% 15%, rgba(228,87,46,.16), transparent 55%),
+    linear-gradient(160deg,#171310,#0c0a08);
+  overflow:hidden;display:flex;align-items:flex-end;padding:22px;
+}
+.spec__visual .idx{
+  position:absolute;top:16px;right:18px;
+  -webkit-text-stroke:2px var(--brasa);
+  text-stroke:2px var(--brasa);
+  filter:drop-shadow(0 2px 10px rgba(14,12,10,.55));
+}
+.spec__visual svg{display:block}
+.spec__visual .cut{position:absolute;inset:0;pointer-events:none}
+.spec__visual .caption{position:relative;z-index:4}
+/* Bloco com foto real: tratamento coerente com o hero (grade + tint + scrim) */
+.spec__visual img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:50% 55%;z-index:0;
+  filter:contrast(1.05) saturate(1.03) brightness(.82);
+}
+.spec__visual .v-tint{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:var(--brasa);mix-blend-mode:soft-light;opacity:.18;
+}
+.spec__visual .v-scrim{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(0deg, rgba(14,12,10,.86) 0%, rgba(14,12,10,.12) 46%, rgba(14,12,10,.32) 100%);
+}
+.spec__visual .idx{z-index:4}
+
+/* ============================================================
+   COMO PEDIR (seção clara de respiro)
+   ============================================================ */
+.order{background:var(--osso);color:var(--carvao);padding:clamp(70px,11vh,130px) 0}
+.order .label{color:#6b6156}
+.order__head{max-width:40ch;margin-bottom:clamp(38px,6vh,68px)}
+.order__head h2{color:var(--carvao);font-size:clamp(2.2rem,5vw,3.6rem)}
+.order__grid{display:grid;grid-template-columns:1fr;gap:0}
+@media (min-width:820px){.order__grid{grid-template-columns:repeat(3,1fr)}}
+.order__card{
+  padding:clamp(26px,3vw,38px) clamp(4px,2vw,30px);
+  border-top:1px solid rgba(14,12,10,.16);
+}
+@media (min-width:820px){
+  .order__card{border-top:none;border-left:1px solid rgba(14,12,10,.16)}
+  .order__card:first-child{border-left:none;padding-left:0}
+}
+.order__step{font-family:var(--ff-display);font-weight:800;color:var(--brasa);font-size:1.1rem;letter-spacing:.02em}
+.order__card h3{font-family:var(--ff-display);font-weight:800;text-transform:uppercase;letter-spacing:-.01em;font-size:1.7rem;margin:12px 0 12px}
+.order__card p{color:#4b433b;margin-bottom:22px;max-width:32ch}
+.order__link{display:inline-flex;align-items:center;gap:10px;color:var(--carvao);font:600 12px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase}
+.order__link svg{width:15px;height:15px;stroke:var(--brasa);transition:transform .3s var(--ease-out)}
+.order__link:hover svg{transform:translateX(4px)}
+
+/* ============================================================
+   PROVA SOCIAL
+   ============================================================ */
+.proof{padding:clamp(72px,12vh,150px) 0;position:relative;overflow:hidden}
+.proof__glow{
+  position:absolute;z-index:0;top:-10%;left:50%;transform:translateX(-50%);
+  width:min(900px,110vw);height:520px;pointer-events:none;
+  background:radial-gradient(55% 55% at 50% 40%, rgba(228,87,46,.14), transparent 68%);
+}
+.proof__in{position:relative;z-index:1}
+.proof__score{display:flex;flex-wrap:wrap;align-items:flex-end;gap:clamp(20px,4vw,54px);margin-bottom:clamp(44px,7vh,84px)}
+.proof__big{font-family:var(--ff-display);font-weight:900;line-height:.8;letter-spacing:-.03em;font-size:clamp(6rem,20vw,15rem)}
+.proof__meta{padding-bottom:clamp(10px,2vh,22px)}
+.proof__meta .stars{margin-bottom:12px}
+.proof__meta .stars svg{width:24px;height:24px}
+.proof__meta .count{font-family:var(--ff-display);font-weight:700;font-size:1.5rem}
+.proof__meta .src{color:var(--fumaca);margin-top:4px}
+
+.quotes{display:grid;grid-template-columns:1fr;gap:20px}
+@media (min-width:820px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.quote{
+  position:relative;background:var(--carvao-2);border:1px solid rgba(138,131,122,.26);
+  padding:34px 28px 30px;
+}
+.quote .mark{
+  font-family:var(--ff-display);font-weight:900;color:var(--brasa);
+  font-size:4.5rem;line-height:.6;display:block;margin-bottom:6px;
+}
+.quote p{color:var(--osso);font-size:1.05rem;line-height:1.55;margin-bottom:22px}
+.quote .who{display:flex;align-items:center;gap:10px}
+.quote .who .stars svg{width:13px;height:13px}
+.quote .who .name{color:var(--fumaca);font:600 11px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase}
+
+/* Depoimentos em scroll horizontal no mobile */
+@media (max-width:819px){
+  .quotes{
+    grid-auto-flow:column;grid-auto-columns:82%;
+    overflow-x:auto;scroll-snap-type:x mandatory;
+    margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);
+    gap:16px;scrollbar-width:none;
+  }
+  .quotes::-webkit-scrollbar{display:none}
+  .quote{scroll-snap-align:start}
+}
+
+/* ============================================================
+   LOCALIZAÇÃO
+   ============================================================ */
+.local{padding:clamp(70px,11vh,140px) 0}
+.local__grid{display:grid;grid-template-columns:1fr;gap:clamp(36px,5vw,64px)}
+@media (min-width:900px){.local__grid{grid-template-columns:1.1fr 0.9fr}}
+.local h2{font-size:clamp(2.4rem,6vw,4.4rem);margin:16px 0 26px;max-width:12ch}
+.addr{border-top:1px solid rgba(138,131,122,.28);margin-top:8px}
+.addr__row{
+  display:flex;gap:18px;padding:20px 0;
+  border-bottom:1px solid rgba(138,131,122,.28);
+}
+.addr__row .k{flex:none;width:104px}
+.addr__row .v{color:var(--osso)}
+.addr__row .v a{color:var(--osso)}
+.local__cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px}
+
+.hours{background:var(--carvao-2);border:1px solid rgba(138,131,122,.26);padding:clamp(26px,3vw,40px)}
+.hours h3{font-family:var(--ff-display);font-weight:800;text-transform:uppercase;letter-spacing:-.01em;font-size:1.5rem;margin-bottom:20px}
+.hours__row{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid rgba(138,131,122,.2)}
+.hours__row:first-of-type{border-top:none}
+.hours__row .d{color:var(--fumaca)}
+.hours__row .t{color:var(--osso);font-variant-numeric:tabular-nums}
+.hours__price{margin-top:22px;padding-top:20px;border-top:1px solid var(--brasa)}
+.hours__price .n{font-family:var(--ff-display);font-weight:800;font-size:1.5rem;color:var(--osso)}
+
+/* Prévia do mapa (Google Maps embed, tratado em escuro + clicável como link) */
+.map{margin-top:clamp(34px,5vw,60px)}
+.map__link{
+  position:relative;display:block;overflow:hidden;
+  aspect-ratio:16/6;background:var(--carvao-2);
+  border:1px solid rgba(138,131,122,.4);
+  transition:border-color .3s var(--ease-out);
+}
+@media (max-width:720px){.map__link{aspect-ratio:4/3}}
+.map__frame{
+  position:absolute;inset:0;width:100%;height:100%;border:0;
+  pointer-events:none; /* vira prévia: o clique é do link, não do mapa */
+  filter:invert(0.92) hue-rotate(180deg) saturate(.72) contrast(.92) brightness(.95);
+}
+.map__overlay{
+  position:absolute;inset:0;pointer-events:none;
+  display:flex;align-items:flex-end;
+  padding:clamp(16px,2vw,26px);
+  background:linear-gradient(0deg, rgba(14,12,10,.72), transparent 52%),
+             radial-gradient(120% 120% at 80% 10%, rgba(14,12,10,.5), transparent 45%);
+}
+.map__cta{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(14,12,10,.82);border:1px solid var(--fumaca);color:var(--osso);
+  padding:13px 20px;min-height:44px;
+  font:600 11px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase;
+  transition:border-color .3s var(--ease-out);
+}
+.map__cta svg{width:15px;height:15px;stroke:var(--brasa)}
+.map__link:hover,.map__link:focus-visible{border-color:var(--brasa)}
+.map__link:hover .map__cta,.map__link:focus-visible .map__cta{border-color:var(--brasa)}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{padding:clamp(60px,9vh,110px) 0 140px;border-top:1px solid rgba(138,131,122,.28)}
+@media (min-width:820px){.footer{padding-bottom:70px}}
+.footer__logomark{display:block;width:clamp(220px,26vw,330px);height:auto}
+.footer__top{display:grid;grid-template-columns:1fr;gap:36px;margin-bottom:48px}
+@media (min-width:820px){.footer__top{grid-template-columns:1.4fr 1fr;align-items:end}}
+.footer__nav{display:flex;flex-wrap:wrap;gap:10px 28px}
+.footer__nav a{color:var(--fumaca)}
+.footer__nav a:hover,.footer__nav a:focus-visible{color:var(--osso)}
+.footer__end{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+@media (min-width:820px){.footer__end{align-items:flex-end}}
+/* botão do Instagram centralizado abaixo dos links de navegação */
+.footer__end .social{align-self:center}
+.social{
+  display:inline-flex;align-items:center;gap:10px;min-height:44px;
+  padding:11px 18px;border:1px solid var(--fumaca);color:var(--osso);
+  font:600 11px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase;
+  transition:color .3s var(--ease-out),border-color .3s var(--ease-out);
+}
+.social svg{width:18px;height:18px;stroke:currentColor}
+.social:hover,.social:focus-visible{color:var(--brasa);border-color:var(--brasa)}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;padding-top:28px;border-top:1px solid rgba(138,131,122,.28)}
+.seal{display:inline-flex;align-items:center;gap:10px;max-width:44ch}
+.seal .bar{display:inline-flex;height:12px;border-radius:2px;overflow:hidden;flex:none}
+.seal .bar i{width:6px;height:12px;display:block}
+.seal small{color:var(--fumaca);font-size:.82rem;line-height:1.5}
+.footer__credit{color:var(--fumaca);font-size:.8rem}
+
+/* ============================================================
+   BARRA INFERIOR MOBILE
+   ============================================================ */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:130;
+  display:grid;grid-template-columns:1fr 1fr;
+  background:rgba(14,12,10,.94);backdrop-filter:blur(10px);
+  border-top:1px solid rgba(138,131,122,.3);
+  transform:translateY(110%);transition:transform .4s var(--ease-out);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.dock.show{transform:none}
+.dock a{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  min-height:58px;
+  font:600 12px/1 var(--ff-body);letter-spacing:.1em;text-transform:uppercase;
+}
+.dock a svg{width:17px;height:17px}
+.dock a:first-child{color:var(--osso)}
+.dock a:first-child svg{stroke:var(--osso)}
+.dock a:last-child{background:var(--brasa);color:var(--carvao);font-weight:600}
+.dock a:last-child svg{stroke:var(--carvao)}
+@media (min-width:820px){.dock{display:none}}
+@media (prefers-reduced-motion: reduce){.dock{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#hero">Pular para o conteúdo</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===================== STATUS BAR ===================== -->
+<header class="statusbar">
+  <div class="wrap statusbar__in">
+    <p class="status-open" aria-live="polite">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="label" id="status-text">Aberto hoje a partir das 11h</span>
+    </p>
+    <a class="status-link" href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+      <span class="label">Pedir on-line</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <!-- Foto de fundo: salve a imagem da carne na brasa como "hero-carne.jpg" nesta pasta.
+       Se o arquivo não existir, o hero volta ao visual só-tipografia automaticamente. -->
+  <div class="hero__media" aria-hidden="true">
+    <img src="hero-carne.jpg" alt="" width="1642" height="958"
+         fetchpriority="high" decoding="async"
+         onerror="this.closest('.hero__media').classList.add('is-empty')">
+    <span class="tint"></span>
+    <span class="scrim"></span>
+  </div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__top">
+      <p class="hero__eyebrow label label--brasa">
+        <span class="line" aria-hidden="true"></span>
+        Churrascaria &amp; Pizzaria · São Caetano, Salvador
+      </p>
+      <img class="hero__logo" src="logo-bufalo-mark-4.png" alt="Búfalo Grill" width="377" height="348" fetchpriority="high" decoding="async">
+    </div>
+
+    <h1 class="hero__title display reveal" id="hero-title">
+      <span class="reveal-line" style="--i:0"><span>Carne na brasa</span></span>
+      <span class="reveal-line" style="--i:1"><span>e pizza de <span class="mark-box">verdade</span></span></span>
+      <span class="reveal-line" style="--i:2"><span>em São Caetano</span></span>
+    </h1>
+
+    <p class="hero__sub">
+      Churrascaria e pizzaria na Estrada de Campinas. Picanha na chapa, forno quente todo dia e <b>massa feita na hora</b>, no ponto que você pede.
+    </p>
+
+    <div class="hero__ctas">
+      <a class="btn btn--primary" id="magnetic" href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+        <span>Pedir on-line</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="https://wa.me/5571991622440" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+        <span>Chamar no WhatsApp</span>
+      </a>
+    </div>
+
+    <div class="hero__proof rise">
+      <span class="stars" role="img" aria-label="Nota 4,6 de 5">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+      </span>
+      <span class="num">4,6</span>
+      <span class="meta">1.517 avaliações no Google</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span class="marquee__item">Picanha na chapa</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Carne acebolada</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Pizza de carne seca com coalho</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Macarrão na hora</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Churrasco no ponto</span><span class="marquee__sep"></span>
+    </div>
+    <div class="marquee__group">
+      <span class="marquee__item">Picanha na chapa</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Carne acebolada</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Pizza de carne seca com coalho</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Macarrão na hora</span><span class="marquee__sep"></span>
+      <span class="marquee__item">Churrasco no ponto</span><span class="marquee__sep"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ESPECIALIDADES ===================== -->
+<section class="spec" id="especialidades" aria-labelledby="spec-title">
+  <div class="wrap">
+    <div class="spec__head">
+      <p class="label label--brasa">O que sai da cozinha</p>
+      <h2 class="display reveal" id="spec-title" style="margin-top:16px">
+        <span class="reveal-line" style="--i:0"><span>Três fogos,</span></span>
+        <span class="reveal-line" style="--i:1"><span>uma casa só</span></span>
+      </h2>
+    </div>
+
+    <!-- 01 CHURRASCO -->
+    <article class="spec__row">
+      <div class="spec__visual rise">
+        <img src="spec-churrasco.jpg" alt="Carne acebolada com queijo coalho derretido servida na chapa de ferro quente" width="1200" height="900" loading="lazy" decoding="async">
+        <span class="v-tint" aria-hidden="true"></span>
+        <span class="v-scrim" aria-hidden="true"></span>
+        <span class="section-index idx" aria-hidden="true">01</span>
+        <span class="caption label" style="color:var(--osso)">Chapa de ferro fundido</span>
+      </div>
+      <div class="spec__body">
+        <p class="label">01 · Churrasco</p>
+        <h3 class="display reveal">
+          <span class="reveal-line" style="--i:0"><span>Picanha,</span></span>
+          <span class="reveal-line" style="--i:1"><span>fogo e sal</span></span>
+        </h3>
+        <p>Picanha na chapa, carne acebolada e cortes no ponto que você pede. A carne chega quente, com a borda selada e a gordura no lugar certo.</p>
+        <p class="spec__data"><span class="n">89×</span><span class="t">o churrasco é citado nas avaliações do Google</span></p>
+      </div>
+    </article>
+
+    <!-- 02 PIZZAS -->
+    <article class="spec__row spec__row--flip">
+      <div class="spec__visual rise">
+        <img src="spec-pizza.jpg" alt="Pizza de carne seca desfiada com cubos de queijo coalho gratinado" width="1200" height="900" loading="lazy" decoding="async">
+        <span class="v-tint" aria-hidden="true"></span>
+        <span class="v-scrim" aria-hidden="true"></span>
+        <span class="section-index idx" aria-hidden="true">02</span>
+        <span class="caption label" style="color:var(--osso)">Forno quente todo dia</span>
+      </div>
+      <div class="spec__body">
+        <p class="label">02 · Pizzas</p>
+        <h3 class="display reveal">
+          <span class="reveal-line" style="--i:0"><span>Carne seca</span></span>
+          <span class="reveal-line" style="--i:1"><span>com coalho</span></span>
+        </h3>
+        <p>Massa assada no forno, borda firme e recheio que não economiza. A de carne seca com coalho é a que faz a mesa toda pedir mais uma.</p>
+        <p class="spec__data"><span class="n">57×</span><span class="t">a pizza é mencionada nas avaliações do Google</span></p>
+      </div>
+    </article>
+
+    <!-- 03 MASSAS -->
+    <article class="spec__row">
+      <div class="spec__visual rise">
+        <img src="spec-massas.jpg" alt="Prato de macarrão ao molho com queijo gratinado, feito na hora" width="1200" height="900" loading="lazy" decoding="async">
+        <span class="v-tint" aria-hidden="true"></span>
+        <span class="v-scrim" aria-hidden="true"></span>
+        <span class="section-index idx" aria-hidden="true">03</span>
+        <span class="caption label" style="color:var(--osso)">Feito no minuto do pedido</span>
+      </div>
+      <div class="spec__body">
+        <p class="label">03 · Massas</p>
+        <h3 class="display reveal">
+          <span class="reveal-line" style="--i:0"><span>Macarrão</span></span>
+          <span class="reveal-line" style="--i:1"><span>na hora</span></span>
+        </h3>
+        <p>Massa feita no minuto do pedido, com molho encorpado e ponto de casa. Chega fumegando na mesa, do jeito que massa boa tem que chegar.</p>
+        <p class="spec__data"><span class="n">46×</span><span class="t">o macarrão aparece nas avaliações do Google</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== COMO PEDIR ===================== -->
+<section class="order" id="como-pedir" aria-labelledby="order-title">
+  <div class="wrap">
+    <div class="order__head">
+      <p class="label">Como pedir</p>
+      <h2 class="display reveal" id="order-title" style="margin-top:14px">
+        <span class="reveal-line" style="--i:0"><span>Do seu jeito,</span></span>
+        <span class="reveal-line" style="--i:1"><span>no seu tempo</span></span>
+      </h2>
+    </div>
+    <div class="order__grid">
+      <article class="order__card">
+        <p class="order__step">01</p>
+        <h3>No salão</h3>
+        <p>Chegue e sente. Equipe atenciosa, carne saindo da chapa e pizza direto do forno.</p>
+        <a class="order__link" href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+          Ver cardápio
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="order__card">
+        <p class="order__step">02</p>
+        <h3>Para retirar</h3>
+        <p>Peça pelo cardápio digital, escolha o horário e retire quentinho no balcão.</p>
+        <a class="order__link" href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+          Pedir para retirar
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="order__card">
+        <p class="order__step">03</p>
+        <h3>Delivery sem contato</h3>
+        <p>Entrega rápida na região de São Caetano, deixada na porta quando você preferir.</p>
+        <a class="order__link" href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+          Pedir delivery
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROVA SOCIAL ===================== -->
+<section class="proof" id="avaliacoes" aria-labelledby="proof-title">
+  <div class="proof__glow" aria-hidden="true"></div>
+  <div class="wrap proof__in">
+    <div class="proof__score">
+      <span class="proof__big display" id="score" data-count="4.6" aria-hidden="true">0,0</span>
+      <span class="sr-only" id="proof-title">Nota 4,6 de 5 no Google, com 1.517 avaliações</span>
+      <div class="proof__meta rise">
+        <span class="stars" role="img" aria-label="4,6 de 5 estrelas">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+        </span>
+        <p class="count">1.517 avaliações</p>
+        <p class="src">Google · São Caetano, Salvador</p>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <article class="quote">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>O melhor lugar pra fazer uma boa refeição, além do ótimo atendimento. Nota 20.</p>
+        <div class="who">
+          <span class="stars" role="img" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          </span>
+          <span class="name">Cliente Google</span>
+        </div>
+      </article>
+      <article class="quote">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Pedi pelo delivery e chegou rápido, ainda quente. A pizza vem bem recheada.</p>
+        <div class="who">
+          <span class="stars" role="img" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+          </span>
+          <span class="name">Cliente Google</span>
+        </div>
+      </article>
+      <article class="quote">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Equipe educada e comida no ponto. Voltei outras vezes e sempre saí satisfeito.</p>
+        <div class="who">
+          <span class="stars" role="img" aria-label="4 estrelas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z" fill="#8A837A"/></svg>
+          </span>
+          <span class="name">Cliente Google</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOCALIZAÇÃO ===================== -->
+<section class="local" id="local" aria-labelledby="local-title">
+  <div class="wrap local__grid">
+    <div>
+      <p class="label label--brasa">Onde a brasa acende</p>
+      <h2 class="display reveal" id="local-title">
+        <span class="reveal-line" style="--i:0"><span>Estrada de</span></span>
+        <span class="reveal-line" style="--i:1"><span>Campinas, 369</span></span>
+      </h2>
+
+      <div class="addr">
+        <div class="addr__row">
+          <span class="k label">Endereço</span>
+          <span class="v">Estr. de Campinas, 369<br>São Caetano, Salvador · BA<br>CEP 40391-400</span>
+        </div>
+        <div class="addr__row">
+          <span class="k label">Telefone</span>
+          <span class="v"><a class="ulink" href="tel:+5571991622440">(71) 99162-2440</a></span>
+        </div>
+        <div class="addr__row">
+          <span class="k label">WhatsApp</span>
+          <span class="v"><a class="ulink" href="https://wa.me/5571991622440" target="_blank" rel="noopener">(71) 99162-2440</a></span>
+        </div>
+      </div>
+
+      <div class="local__cta">
+        <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&query=B%C3%BAfalo+Grill+Estrada+de+Campinas+369+S%C3%A3o+Caetano+Salvador" target="_blank" rel="noopener">
+          <span>Traçar rota</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="https://wa.me/5571991622440" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <aside class="hours" aria-label="Horários e preço">
+      <h3>Horários</h3>
+      <div class="hours__row"><span class="d">Segunda a sexta</span><span class="t">11h às 23h</span></div>
+      <div class="hours__row"><span class="d">Sábado e domingo</span><span class="t">11h às 23h30</span></div>
+      <div class="hours__row"><span class="d">Cozinha</span><span class="t">Chapa e forno o dia todo</span></div>
+      <div class="hours__price">
+        <p class="label">Faixa de preço</p>
+        <p class="n" style="margin-top:8px">R$ 20 a R$ 100 <span style="font-family:var(--ff-body);font-weight:400;font-size:.95rem;color:var(--fumaca)">por pessoa</span></p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="wrap map">
+    <a class="map__link" href="https://www.google.com/maps/search/?api=1&query=B%C3%BAfalo+Grill+Estrada+de+Campinas+369+S%C3%A3o+Caetano+Salvador" target="_blank" rel="noopener" aria-label="Abrir no Google Maps: Estrada de Campinas, 369, São Caetano, Salvador, BA">
+      <iframe class="map__frame"
+        src="https://www.google.com/maps?q=B%C3%BAfalo+Grill+Estrada+de+Campinas+369+S%C3%A3o+Caetano+Salvador&output=embed"
+        title="Mapa da localização do Búfalo Grill em São Caetano, Salvador"
+        loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <span class="map__overlay">
+        <span class="map__cta">Abrir no Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </span>
+    </a>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" id="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <img class="footer__logomark" src="logo-bufalo.png" alt="Búfalo Grill — Churrascaria e Pizzaria" width="760" height="339" loading="lazy" decoding="async">
+      <div class="footer__end">
+        <nav class="footer__nav" aria-label="Seções do site">
+          <a class="ulink" href="#hero">Início</a>
+          <a class="ulink" href="#especialidades">Especialidades</a>
+          <a class="ulink" href="#como-pedir">Como pedir</a>
+          <a class="ulink" href="#avaliacoes">Avaliações</a>
+          <a class="ulink" href="#local">Local</a>
+          <a class="ulink" href="https://app.cardapioweb.com" target="_blank" rel="noopener">Cardápio on-line</a>
+        </nav>
+        <!-- TODO: confirmar o @ real do perfil no Instagram -->
+        <a class="social" href="https://www.instagram.com/bufalogrillsaocaetano/" target="_blank" rel="noopener" aria-label="Siga o Búfalo Grill no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>@bufalogrillsaocaetano</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="seal">
+        <span class="bar" aria-hidden="true"><i style="background:#E4572E"></i><i style="background:#F2EDE4"></i><i style="background:#C9A227"></i><i style="background:#3aa34a"></i><i style="background:#3b6fd4"></i><i style="background:#7a3fb0"></i></span>
+        <small>Casa que acolhe a comunidade LGBTQ+. Todo mundo é bem-vindo à mesa.</small>
+      </span>
+      <span class="footer__credit">Búfalo Grill São Caetano · Salvador, BA · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== DOCK MOBILE ===================== -->
+<nav class="dock" id="dock" aria-label="Ações rápidas">
+  <a href="https://app.cardapioweb.com" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    Cardápio
+  </a>
+  <a href="https://wa.me/5571991622440" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+    WhatsApp
+  </a>
+</nav>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- Status aberto/fechado ----
+     Segunda a sexta: 11h às 23h | Sábado e domingo: 11h às 23h30 */
+  var OPEN_MIN = 11 * 60; // 11:00
+  var statusWrap = document.querySelector(".status-open");
+  var statusText = document.getElementById("status-text");
+  function updateStatus(){
+    if(!statusWrap || !statusText) return;
+    var now = new Date();
+    var weekend = (now.getDay() === 0 || now.getDay() === 6); // 0=Dom, 6=Sáb
+    var closeMin = weekend ? (23 * 60 + 30) : (23 * 60);
+    var nowMin = now.getHours() * 60 + now.getMinutes();
+    var isOpen = nowMin >= OPEN_MIN && nowMin < closeMin;
+    statusWrap.classList.toggle("is-open", isOpen);
+    statusWrap.classList.toggle("is-closed", !isOpen);
+    statusText.textContent = isOpen
+      ? (weekend ? "Aberto até as 23h30" : "Aberto até as 23h")
+      : "Fechado agora. Abertura às 11h";
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* ---- Reveal por IntersectionObserver (headlines, números, imagens) ---- */
+  var revealEls = document.querySelectorAll(".reveal, .rise");
+  if("IntersectionObserver" in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, {threshold:0.2, rootMargin:"0px 0px -8% 0px"});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* ---- Contador 0 -> 4,6 ---- */
+  var score = document.getElementById("score");
+  function animateScore(){
+    if(reduce){ score.textContent = "4,6"; return; }
+    var target = 4.6, dur = 1400, start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start)/dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = (target * eased).toFixed(1).replace(".", ",");
+      score.textContent = val;
+      if(p < 1) requestAnimationFrame(step);
+      else score.textContent = "4,6";
+    }
+    requestAnimationFrame(step);
+  }
+  if(score){
+    if("IntersectionObserver" in window && !reduce){
+      var sIO = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ animateScore(); sIO.unobserve(e.target); }});
+      }, {threshold:0.6});
+      sIO.observe(score);
+    } else { score.textContent = "4,6"; }
+  }
+
+  /* ---- Botão magnético sutil ---- */
+  var mag = document.getElementById("magnetic");
+  if(mag && !reduce && window.matchMedia("(pointer:fine)").matches){
+    mag.addEventListener("mousemove", function(ev){
+      var r = mag.getBoundingClientRect();
+      var mx = ((ev.clientX - r.left)/r.width - .5) * 6;
+      var my = ((ev.clientY - r.top)/r.height - .5) * 6;
+      mag.style.transform = "translate(" + mx.toFixed(2) + "px," + my.toFixed(2) + "px)";
+    });
+    mag.addEventListener("mouseleave", function(){ mag.style.transform = ""; });
+  }
+
+  /* ---- Dock mobile aparece depois do hero ---- */
+  var dock = document.getElementById("dock");
+  var hero = document.getElementById("hero");
+  if(dock && hero && "IntersectionObserver" in window){
+    var dIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ dock.classList.remove("show"); }
+        else { dock.classList.add("show"); }
+      });
+    }, {threshold:0, rootMargin:"-60px 0px 0px 0px"});
+    dIO.observe(hero);
+  }
+})();
+</script>
+</body>
+</html>
